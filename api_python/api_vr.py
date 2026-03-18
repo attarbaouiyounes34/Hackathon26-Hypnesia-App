@@ -61,8 +61,8 @@ ECO_DATA = {
 def lire_excel_v1():
     donnees_vr = []
     # Assure-toi que le fichier Excel_V1.csv est dans le même dossier
-    if not os.path.exists("Excel_V1.csv"):
-        return [{"erreur": "Fichier Excel_V1.csv introuvable"}]
+    if not os.path.exists("Excel_V1.xlsx"):
+        return [{"erreur": "Fichier Excel_V1.xlsx introuvable"}]
         
     with open("Excel_V1.csv", mode='r', encoding='utf-8') as f:
         # On utilise le bon délimiteur (souvent point-virgule ou virgule)
